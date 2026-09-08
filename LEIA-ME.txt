@@ -1,0 +1,65 @@
+COMO HOSPEDAR A PÁGINA "ALÍVIO SOBRE A MESA"
+==============================================
+
+Este pacote contém a página em DOIS FORMATOS:
+
+1) alivio-sobre-a-mesa/
+   -> Formato normal (index.html + pasta images/ separada)
+   -> Menor, carrega mais rápido, mas exige subir a pasta "images"
+      JUNTO com o index.html, senão as imagens somem.
+
+2) arquivo-unico-caso-de-erro/
+   -> Formato "tudo em um": um único arquivo .html com todas as
+      imagens já embutidas dentro dele (por isso é um arquivo grande).
+   -> USE ESSE se, ao hospedar a versão normal, as imagens não aparecerem.
+   -> Como não depende de nenhuma pasta extra, é impossível dar esse
+      problema de "imagem sumida" com ele.
+
+------------------------------------------------------------
+SE AS IMAGENS SUMIREM NA SUA HOSPEDAGEM
+------------------------------------------------------------
+Isso quase sempre acontece por um destes motivos:
+  - Só o index.html foi enviado, sem a pasta "images" junto
+  - A pasta "images" foi renomeada ou ficou em outro lugar do servidor
+  - A plataforma "achatou" as pastas ao fazer upload
+
+Solução mais rápida: use o arquivo de "arquivo-unico-caso-de-erro/".
+Suba SÓ esse .html (renomeie para index.html se a plataforma exigir)
+e pronto — nada mais precisa ser enviado junto.
+
+------------------------------------------------------------
+OPÇÃO 1 — Hospedagem simples e gratuita (Netlify Drop)
+------------------------------------------------------------
+1. Acesse https://app.netlify.com/drop pelo navegador (não precisa criar conta)
+2. Arraste a pasta "alivio-sobre-a-mesa" inteira para a área indicada
+   OU, se preferir o modo à prova de erro, arraste só o arquivo
+   "alivio-sobre-a-mesa-tudo-em-um.html"
+3. Em poucos segundos você recebe um link tipo nome-aleatorio.netlify.app já no ar
+4. Se quiser usar seu domínio próprio, vá em "Domain settings" dentro do
+   Netlify e aponte o DNS do seu domínio pra lá
+
+------------------------------------------------------------
+OPÇÃO 2 — Seu próprio hosting / cPanel / FTP
+------------------------------------------------------------
+1. Acesse o gerenciador de arquivos do seu hosting (ou um cliente FTP como FileZilla)
+2. Crie uma pasta dentro de public_html (ex: public_html/alivio)
+3. Suba o CONTEÚDO de dentro da pasta "alivio-sobre-a-mesa" (index.html + images/),
+   mantendo essa mesma estrutura — ou, se preferir, suba só o arquivo
+   "tudo-em-um" e renomeie pra index.html
+4. Acesse pelo endereço: seudominio.com.br/alivio
+
+------------------------------------------------------------
+OPÇÃO 3 — Plataforma de página de vendas (GreatPages, Hotmart, etc.)
+------------------------------------------------------------
+Use a opção de "importar HTML customizado" ou "upload de página" da plataforma.
+Se ela só aceitar um único arquivo, use a versão de arquivo-unico-caso-de-erro/.
+
+------------------------------------------------------------
+Links importantes já configurados dentro da página:
+------------------------------------------------------------
+- Checkout (Kiwify): https://pay.kiwify.com.br/6d3bfu4
+- Vídeo (YouTube): https://youtu.be/8mzD7YJ5NbY
+- WhatsApp: +55 71 8203-3730
+- Instagram: @tatianecrios
+
+Qualquer ajuste de link, preço ou texto, é só pedir.
